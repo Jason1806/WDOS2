@@ -1,0 +1,293 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Your+Font+Family:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Body styles */
+body {
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #ccc;
+    font-size: 2rem;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo {
+    width: 350px;
+    cursor: pointer;
+    margin:2%;
+    opacity: 0.7;
+    
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 10px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-size: large;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px; 
+    position: relative;
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    background-image: linear-gradient(to right,#F79F79, #F7D08A, #E3F09B, #87B6A7, #5B5941);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-color: #FFD700;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.dropdownmenu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    opacity: 0; 
+    transition: 0.7s ease-in-out; 
+}
+
+.dropdown:hover .dropdownmenu {
+    display: block;
+    opacity: 1;
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+
+    /* Hamburger menu icon styling */
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 6px 0;
+    }
+
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .nav-container li {
+        margin: 20px 0;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+}
+
+@media all and (max-width: 323px) {
+    .logo {
+        width: 80px;
+    }
+}
+
+
+
+
+/* Event 2 styling*/
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkgreen;
+    color: black;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* About section styles */
+.about {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Services section styles */
+.services {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Add this CSS to make the images responsive */
+.service img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra spacing below inline images */
+    margin: 0 auto; /* Center-align the images */
+    border-radius: 30px;
+}
+
+
+/* Contact section styles */
+.contact {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
