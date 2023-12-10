@@ -288,7 +288,7 @@ th, td {
 
 .surfing, .sailing, .scubadiving{
     width: 75%;
-    height: 750px;
+    height: auto;
     margin: auto;
     display: flex;
     justify-content: center;
