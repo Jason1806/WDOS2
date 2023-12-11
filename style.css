@@ -287,9 +287,8 @@ th, td {
 }
 
 .surfing, .sailing, .scubadiving{
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin: auto;
     display: flex;
     justify-content: center;
 
@@ -551,5 +550,6 @@ button#RoomBook,
     button#ClearButton,
     button#AdventureBook {
         width: 100%;
+        display: flex;
     }
 }
